@@ -1,0 +1,2 @@
+git diff 对比当前文件和暂存区的内容
+git diff —statged 或 git diff —cached 对比暂存区和本地仓库的内容
