@@ -1,0 +1,12 @@
+本地推送到远程服务端
+git push <仓库> <本地分支> ：<远程分支> 推送本地分支到远程分支
+git push <仓库> <本地分支> 推送本地分支到同名的远程分支，如远程分支不存在，则新建同名的远程分支。
+
+取回远程仓库的更新 
+git fetch 取回所有的远程仓库分支的更新
+git fetch <分支名> 取回远程仓库的某个分支
+
+更新当前分支代码
+git merge origin/master 
+git rebase origin/master
+git rebase [basebranch] [topicbranch] 更新topicbranch分支到basebranch
