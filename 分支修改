@@ -1,0 +1,8 @@
+更新当前分支代码
+git merge origin/master               更新远程master分支到当前分支
+
+git rebase origin/master              更新远程master分支到当前分支
+
+git rebase [basebranch] [topicbranch] 更新topicbranch分支到basebranch
+
+git merge和git rebase的区别http://gitbook.liuhui998.com/4_2.html
