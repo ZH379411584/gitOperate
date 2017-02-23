@@ -3,7 +3,21 @@ git push <仓库> <本地分支> ：<远程分支> 推送本地分支到远程�
 git push <仓库> <本地分支> 推送本地分支到同名的远程分支，如远程分支不存在，则新建同名的远程分支。
 
 取回远程仓库的更新 
-git fetch 取回所有的远程仓库分支的更新
-git fetch <分支名> 取回远程仓库的某个分支
+git fetch             如果你使用 clone 命令克隆了一个仓库，命令会自动将其添加为远程仓库并默认以 “origin” 为简写。
+git fetch remote-name
 
+git fetch 完成后
+git status 查看状态
+$ git status
+On branch master
+Your branch is behind 'origin/master' by 4 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+nothing to commit, working directory clean
 
+意思是你的分支已经比origin/master分支晚了4个提交
+
+$ git branch -a
+* master
+  remotes/origin/HEAD -> origin/master  
+  remotes/origin/master                    这个上面说的远程仓库的分支
+所以git fetch 命令会将数据拉取到你的本地仓库 - 它并不会自动合并或修改你当前的工作。 使用git rebase 或者 git merge合并代码
