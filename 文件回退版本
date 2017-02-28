@@ -1,0 +1,37 @@
+git log  fileName
+
+    D:\Audaque\audaque>git log Vega/VegaWeb/src/main/java/com/audaque/vega/common/app/VegaUserAction.java
+    commit 966b24cfc4d7fa7b1765a52f1a0a976162cceed1
+    Author: hong.zheng <hong.zheng@audaque.com>
+    Date:   Fri Feb 10 11:30:22 2017 +0800
+
+        微信提现用户明细导出
+
+    commit 6e9584dd8e6345ffc05f2e4219a5743ee4ea0692
+    Author: xu zhang <xu.zhang-1@audaque.com>
+    Date:   Fri Feb 17 11:23:30 2017 +0800
+
+        vega132-20170210 20170216commit 20170217 edit
+        
+git reset 6e9584dd8e6345ffc05f2e4219a5743ee4ea0692  Vega/VegaWeb/src/main/java/com/audaque/vega/common/app/VegaUserAction.java
+
+    D:\Audaque\audaque>git reset 6e9584dd8e6345ffc05f2e4219a5743ee4ea0692 Vega/VegaWeb/src/main/java/com/audaque/vega/common
+    /app/VegaUserAction.java
+    Unstaged changes after reset:
+    M       Vega/VegaWeb/src/main/java/com/audaque/vega/common/app/VegaUserAction.java
+git status
+        On branch 'T_detail_weChat_withDraw'
+    Changes to be committed:
+      (use "git reset HEAD <file>..." to unstage)
+
+            modified:   Vega/VegaWeb/src/main/java/com/audaque/vega/common/app/VegaUserAction.java
+
+    Changes not staged for commit:
+      (use "git add <file>..." to update what will be committed)
+      (use "git checkout -- <file>..." to discard changes in working directory)
+      
+            modified:   Vega/VegaWeb/src/main/java/com/audaque/vega/common/app/VegaUserAction.java
+
+在reset后，暂存区中是文件历史的版本，工作区中是现在文件的版本，所以使用git checkout将暂存区恢复到工作区
+
+git commit -a -m "afdfasdf"
