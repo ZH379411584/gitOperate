@@ -33,5 +33,4 @@ git status
             modified:   Vega/VegaWeb/src/main/java/com/audaque/vega/common/app/VegaUserAction.java
 
 在reset后，暂存区中是文件历史的版本，工作区中是现在文件的版本，所以使用git checkout将暂存区恢复到工作区
-
-git commit -a -m "afdfasdf"
+然后使用git commit 提交这次的修改
