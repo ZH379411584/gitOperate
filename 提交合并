@@ -1,0 +1,36 @@
+$ git log
+        commit d19ee87a59254e05ab5c58190ede031b23be8841
+        Author: hong.zheng <hong.zheng@audaque.com>
+        Date:   Thu Mar 2 09:21:43 2017 +0800
+
+            thrid commit
+
+        commit 260b39a444aebff9224276b046a7db6bbb1d5df7
+        Author: hong.zheng <hong.zheng@audaque.com>
+        Date:   Thu Mar 2 09:21:00 2017 +0800
+
+            second commit
+
+        commit 2da70f6dedcc4a389fc1eb8bc3eca5acd42f3d52
+        Author: hong.zheng <hong.zheng@audaque.com>
+        Date:   Thu Mar 2 09:20:32 2017 +0800
+
+            first commit
+ 需要合并第三和第二次提交
+
+git rebase -i  2da70f6dedcc4a389fc1eb8bc3eca5acd42f3d52
+ 
+pick 260b39a444aebff9224276b046a7db6bbb1d5df7 second commit 
+pick d19ee87a59254e05ab5c58190ede031b23be8841 first commit
+# Rebase 2da70f6..c53a850 onto 2da70f6
+#
+# Commands:
+#  p, pick = use commit
+#  r, reword = use commit, but edit the commit message
+#  e, edit = use commit, but stop for amending
+#  s, squash = use commit, but meld into previous commit
+#  f, fixup = like "squash", but discard this commit's log message
+#  x, exec = run command (the rest of the line) using shell
+#
+# These lines can be re-ordered; they are executed from top to bottom.
+#
