@@ -27,3 +27,6 @@ $ git branch -a
   remotes/origin/HEAD -> origin/master  
   remotes/origin/master                    这个上面说的远程仓库的分支
 所以git fetch 命令会将数据拉取到你的本地仓库 - 它并不会自动合并或修改你当前的工作。 使用git rebase 或者 git merge合并代码
+
+###以远程分支创建自己的分支
+git checkout -b 远程分支 origin/远程分支
