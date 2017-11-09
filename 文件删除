@@ -15,3 +15,7 @@ $ git rm --cached README
 
 当你忘记添加.gitignore文件，将日志文件添加进了暂存区，使用git rm --cached fileName ,
 并在.gitignore文件中添加filename，那么这个文件就被忽略了，如果已经添加进了本地仓库中，那么需要commit。
+
+
+git update-index --assume-unchanged
+使用此命令忽略已提交到仓库的文件的修改
